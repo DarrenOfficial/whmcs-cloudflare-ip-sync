@@ -30,11 +30,11 @@ add_hook('PreAutomationTask', 1, function($vars) {
     $ips = array();
 
     foreach ($ipv4 as $ip) {
-        $ips[] = array('ip' => $ip, 'note' => 'Cloudflare');
+        $ips[] = array('ip' => $ip, 'note' => 'Cloudflarev4');
     }
 
     foreach ($ipv6 as $ip) {
-        $ips[] = array('ip' => $ip, 'note' => 'Cloudflare');
+        $ips[] = array('ip' => $ip, 'note' => 'Cloudflarev6');
     }
     
     $ips = json_encode($ips);
